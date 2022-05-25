@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: normal 12px/1.3 arial, sans-serif;
+}
+.navbar{
+    background-color: black;
+    height: 70px;
+}
+.navbar ul {
+    margin-left: 40%;
+    
+}
+.navbar ul li{
+    display: inline-block;
+    margin-left:50px ;
+    margin-top: 25px;
+    font-size: 20px;
+    
+}
+.navbar ul li a{
+    color: orange;
+    text-decoration: none;
+    
+}
+.navbar ul li a:hover{
+    color: rgb(247, 245, 225);
+}
+
+#selectForm{
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 0px rgb(0, 0, 0,0.3);
+    background-color: rgb(233, 232, 232);
+    width: 500px;
+    height: 320px;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+#selectForm table  {
+    margin-left: 50px;
+    height: 90%;
+    width: 90%;
+    font-size: 15px;
+}
+.formTable {
+    background-color: rgb(233, 232, 232);
+    border-radius: 5px;
+}
+.formTable tr td{
+    color: gray;
+}
+
+#submitbtn{
+    margin-left: 40%;
+
+}
+
+.highlighted{
+    background-color: orange;
+}
+.goldSliderText{
+    border:0; 
+    color:#f6931f; 
+    font-weight:bold;
+}
+
+
+
+
+
+.container {
+    position: relative;
+    width: 920px;
+    margin: 30px auto;
+}
+
+.container #product {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 670px;
+}
+
+.container #sidebar {
+    position: relative;
+    z-index: 1;
+    float: right;
+    width: 224px;
+}
+
+/*  PRODUCTS
+----------------------------*/
+
+#placeholder ul {
+    width: 680px;
+    margin-left: -10px; 
+    
+}
+    
+
+#placeholder ul li {
+    position: relative;
+    float: left;
+    width: 180px;
+    margin: 0 0 10px 10px;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: solid black 1px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    -webkit-transition: -webkit-transform .1s ease;
+    -moz-transition: -webkit-transform .1s ease;
+    -o-transition: -webkit-transform .1s ease;
+    -ms-transition: -webkit-transform .1s ease;
+    transition: transform .1s ease;
+}
+
+#placeholder ul li:hover {
+    background-color: #f1bc5a;
+}
+
+#placeholder.active ul li {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity = 40);
+    opacity: .4;
+}
+
+#placeholder.active ul li.active {
+    z-index: 2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity = 100);
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: scale(.6);
+    -moz-transform: scale(.6);
+    -o-transform: scale(.6);
+    -ms-transform: scale(.6);
+    transform: scale(.6);
+}
+
+#placeholder ul li a {
+    display: block;
+    color: #000
+}
+
+#placeholder ul li a h3 {
+    margin-top: 5px;
+}
+
+
+#placeholder ul li a h3,
+#placeholder ul li a p {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+#placeholder ul li a .viewbtn{
+    background-color: orange;
+    margin-left: 30%;
+    margin-bottom: 4px;
+}
+#placeholder ul li button{
+    margin-left: 27%;
+    margin-bottom: 4px;
+
+}
+
+@media screen and (max-width: 500px) {
+    .navbar{
+        height: 40px;
+        width: 500px;
+    }
+    .navbar ul {
+        margin-left: 20%;
+        
+    }
+    .navbar ul li{
+        display: inline-block;
+        margin-left:10% ;
+        margin-top: 10px;
+        
+        font-size: 15px;
+
+    }
+    #placeholder ul li {
+        position: relative;
+        float:none;
+        margin-left: 22%;
+        
+    }
+    .sidebar .basket {
+        position: static;
+        margin-left: 1%;
+        
+    }
+    #selectForm{
+        border-radius: 5px;
+        width: 430px;
+        height: 320px;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    #selectForm table  {
+        margin-left: 50px;
+        height: 90%;
+        width: 60%;
+        font-size: 15px;
+    }
+    .formTable {
+        background-color: rgb(233, 232, 232);
+        border-radius: 5px;
+    }
+    .formTable tr td{
+        color: gray;
+    }
+    
+    #submitbtn{
+        margin-left: 20%;
+    
+    }
+
+}
+

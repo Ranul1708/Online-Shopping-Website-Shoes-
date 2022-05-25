@@ -1,0 +1,205 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="allProductsPageStyle.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="jquery-ui-1.9.0.custom.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="allProductsPage.html">All products</a></li>
+            <li><a href="selectProductsPage.html">select products</a></li>
+        </ul>
+    </nav>
+
+
+<div class="container">
+    <section id="product">
+        <ul class="clear">
+            <li data-id="1">
+                <a href="#">
+                    <img src="mensShoesImages/boot26161353_W_3.webp" alt="">
+                    <h3>Boots (brown) men</h3>
+                    <h4>$75.99</h4>
+                    
+                    <p><strong>colors</strong>:Black, Brown, Green</p>
+                    <a href="shoe1.html"><input type="button" class="viewbtn" value="view product"></a>
+                    
+                    <button class="favbtn">Add to favorite</button>
+                </a>
+            </li>
+            <li data-id="2">
+                <a href="#">
+                    <img src="mensShoesImages/casual26161479_W_1.webp" alt="">
+                    <h3>Shoes (green) men</h3>
+                    <h4>$85.99</h4>
+                    <p><strong>colors</strong>:Black, Brown, Green</p>
+                    <a href="shoe2.html"><input type="button" class="viewbtn" value="view product"></a>
+                    <button class="favbtn">Add to favorite</button>
+                </a>
+            </li>
+            <li data-id="3">
+                <a href="#">
+                    <img src="mensShoesImages/office26162012_W_1.webp" alt="">
+                    <h3>Harverd cut (Black) men</h3>
+                    <h4>$90.99</h4>
+                    <p><strong>colors</strong>:Black, Brown, Green</p>
+                    <a href="shoe3.html"><input type="button" class="viewbtn" value="view product"></a>
+                    <button class="favbtn">Add to favorite</button>
+                </a>
+            </li>
+            <li data-id="4">
+                <a href="#">
+                    <img src="womensShoesImages/flats26161614_W_1.webp" alt="">
+                    <h3>Flats (Pink)</h3>
+                    <h4>$50.99</h4>
+                    <p><strong>colors</strong>:Black, Brown, Green</p>
+                    <a href="shoe4.html"><input type="button" class="viewbtn" value="view product"></a>
+                    <button class="favbtn">Add to favorite</button>
+                </a>
+            </li>
+            <li data-id="5">
+                <a href="#">
+                    <img src="womensShoesImages/heels26161568_W_1.webp" alt="">
+                    <h3>Court shoes (Black) </h3>
+                    <h4>$102.99</h4>
+                    <p><strong>colors</strong>:Black, Brown, Green</p>
+                    <a href="shoe5.html"><input type="button" class="viewbtn" value="view product"></a>
+                    <button class="favbtn">Add to favorite</button>
+                </a>
+            </li>
+            <li data-id="6">
+                <a href="#">
+                    <img src="womensShoesImages/sneakers26162143_W_1.webp" alt="">
+                    <h3>Sneekers (Silver) </h3>
+                    <h4>92.99</h4>
+                    <p><strong>colors</strong>:Black, Brown, Green</p>
+                    <a href="shoe6.html"><input type="button" class="viewbtn" value="view product"></a>
+                    <button class="favbtn">Add to favorite</button>
+                </a>
+            </li>
+            <li data-id="7">
+                <a href="#">
+                    <img src="kidsShoes/kidsCasual26163873_W_1.webp" alt="">
+                    <h3>Shoes (brown) kids</h3>
+                    <h4>$72.99</h4>
+                    <p><strong>colors</strong>:Black, Brown, Green</p>
+                    <a href="shoe7.html"><input type="button" class="viewbtn" value="view product"></a>
+                    <button class="favbtn">Add to favorite</button>
+                </a>
+            </li>
+            
+        </ul>
+  </section>
+
+
+    <aside id="sidebar">
+        <h3>Your favorite products</h3>
+        <p>(Drag and Drop items)</p>
+        <div class="basket">
+            <div class="basket_list">
+                <div class="head">
+                    <span class="name">Product name</span>
+                   
+                </div>
+                <ul>
+                    <!--li>
+                        <span class="name">Samsung S3 asd asdasdaf dfsdghgfg dgfg</span>
+                        <input class="count" value="1" type="text">
+                        <button class="delete">&#10005;</button>
+                    </li-->
+                </ul>
+                
+            </div>
+            <div class="storage">
+                <button id="storagebtn">save to local storage</button>
+            </div>
+        </div>
+        
+        
+
+    </aside>
+</div>
+<!--The following code is placed at the end of the body. because the document has
+to be loaded before the draggable and droppable codes get executed
+-->
+<script>
+    $(function () {
+
+		// jQuery UI Draggable
+		$("#product li").draggable({
+		
+			// brings the item back to its place when dragging is over
+			revert:true,
+		
+			// once the dragging starts, we decrease the opactiy of other items
+			// Appending a class as we do that with CSS
+			drag:function () {
+				$(this).addClass("active");
+				$(this).closest("#product").addClass("active");
+			},
+		
+			// removing the CSS classes once dragging is over.
+			stop:function () {
+				$(this).removeClass("active").closest("#product").removeClass("active");
+			}
+		});
+
+        // jQuery Ui Droppable
+		$(".basket").droppable({
+		
+			// The class that will be appended to the to-be-dropped-element (basket)
+			activeClass:"active",
+		
+			// The class that will be appended once we are hovering the to-be-dropped-element (basket)
+			hoverClass:"hover",
+		
+			// The acceptance of the item once it touches the to-be-dropped-element basket
+			// For different values http://api.jqueryui.com/droppable/#option-tolerance
+			tolerance:"touch",
+			drop:function (event, ui) {
+		
+				var basket = $(this),
+						move = ui.draggable,
+						itemId = basket.find("ul li[data-id='" + move.attr("data-id") + "']");
+		
+				// To increase the value by +1 if the same item is already in the basket
+                
+				if (itemId.html() != null) {
+					//itemId.find("input").val(parseInt(itemId.find("input").val()) + 1);
+				}
+				else {
+					// Add the dragged item to the basket
+					addBasket(basket, move);
+		
+					// Updating the quantity by +1" rather than adding it to the basket
+					move.find("input").val(parseInt(move.find("input").val()) + 1);
+                    
+				}
+               
+			}
+		});
+
+        // This function runs onc ean item is added to the basket
+        function addBasket(basket, move) {
+			basket.find("ul").append('<li data-id="' + move.attr("data-id") + '">'
+					+ '<span class="name">' + move.find("h3").html() + '</span>'
+					
+					+ '<button class="delete">&#10005;</button>');
+		}
+
+
+        // The function that is triggered once delete button is pressed
+        $(".basket ul li button.delete").live("click", function () {
+			$(this).closest("li").remove();
+		});
+
+    });
+</script>
+
+
+</body>
+</html>

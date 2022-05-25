@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    
+    <link rel="stylesheet" href="showblueprintStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="allProductsPage.html">All products</a></li>
+            <li><a href="selectProductsPage.html">select products</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <h3>Flats (pink)</h3>
+
+        <div class="main-container">
+            <img src="womensShoesImages/flats26161614_W_1.webp" alt="">
+        </div>
+        
+        <div class="thumbnail-container">
+            <div class="column">
+                <img src="womensShoesImages/flats26161614_W_3.webp" alt="">
+            </div>
+            <div class="column">
+                <img src="womensShoesImages/flats26161614_W_4.webp" alt="">
+            </div>
+            <div class="column">
+                <img src="womensShoesImages/flats26161614_W_7.webp" alt="">
+            </div>
+            <div class="column">
+                <img src="womensShoesImages/flats26161614_W_6.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Description</a></li>
+                <li><a href="#tabs-2">Sizes</a></li>
+                <li><a href="#tabs-3">Delivery</a></li>
+            </ul>
+            <div id="tabs-1">
+                <h3>Product Description</h3>
+                <p>Slip into loafer Pure 2 Tassel for instant comfort and enhanced style status. 
+                    A contemporary buckle and playful tassel add a premium edge to this chic, easy-wearing shoe 
+                    - and thanks to its soft cushioning and breathable leathers, you’ll feel comfortable and cool 
+                    with every step.Soft, responsibly sourced praline leather upper,Cushion Plus™ part-recycled 
+                    foam footbed offers eco-conscious comfort,Breathable full leather lining and sock,Durable anti-slip
+                     resin soleHeel height: 10mm.</p>
+            </div>
+            <div id="tabs-2">
+                <h3>Size guide</h3>
+                <div class="listContainer">
+                <ul>
+                    <li>4.5</li>
+                    <li>5</li>
+                    <li>5.5</li>
+                    <li>5.6</li>
+                    <li>5.7</li>
+                    <li>5.8</li>
+                    <li>6.5</li>
+                    <li>7.5</li>
+                    <li>8</li>
+
+
+                </ul>
+                </div>
+            </div>
+            <div id="tabs-3">
+                <h3>Delivery and Return</h3>
+                <div class="return_details">
+                    <p><strong>6.95</strong>   DPD Next Day Delevery(before 7pm)</p><br>
+                    <p><strong>FREE</strong>   Collect from store(within 4 working days)</p><br>
+                    <p><strong>3.95</strong>   Standared Delivery (Within 4 working days)</p><br>
+                    <p><strong>5.95</strong>   Collect Plus(Within 5 working days)</p><br>
+                    <p><strong>FREE</strong>   Returns & Exchanges on all times</p><br>
+                <div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+        $("#tabs").tabs();
+    });
+
+    
+    $(document).ready(function(){
+        $(".thumbnail-container .column img").click(function(){
+            var mainImageURL=$(".main-container img").attr("src");
+            var thumbnailImageURL = $(this).attr("src");
+            $(".main-container img").attr("src",thumbnailImageURL);
+            $(this).attr("src",mainImageURL)
+    
+    
+    });
+
+    $(document).ready(function(){
+           $(".tab_container").hide();
+           
+            $(".tab-navigation li").click(function(event){
+                var index = $(this).index();
+                $(".tab_container").hide();
+                $(".tab_container").eq(index).show();
+            });
+
+        });
+        
+
+
+    });
+
+    </script>
+</body>
+</html>

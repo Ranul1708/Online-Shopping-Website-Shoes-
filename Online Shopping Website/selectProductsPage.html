@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="selectProductsPageStyle.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    
+    
+	
+	<script src="form.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="allProductsPage.html">All products</a></li>
+            <li><a href="selectProductsPage.html">select products</a></li>
+        </ul>
+    </nav>
+    
+    
+    <form id="selectForm">
+    
+        <table class="formTable">
+            <tr class="genderdata">
+            
+                <td class="col1"><strong>Gender :<strong></td>
+                    
+
+                <td class="col2">
+                    <label id="Men">Men</label>
+                    <input type="radio" id="men" name="gender" value="men">
+                    
+                    
+                </td>
+                <td class="col3">
+                    <label for="Women">Women</label>
+                    <input type="radio" id="Women" name="gender" value="Women">
+                </td>
+
+            </tr>
+            <tr class="sizedata">
+                <td>
+                    <strong>size</strong>
+                </td>
+                <td>
+                    <select>
+                        <option>4.5</option>
+                        <option>4.7</option>
+                        <option>5</option>
+                        <option>5.5</option>
+                        <option>5.6</option>
+                        <option>5.7</option>
+                        <option>5.8</option>
+                        <option>6</option>
+                        <option>8</option>
+                        <option>12</option>
+                    </select>
+                
+                </td>
+                
+            </tr>
+
+            <tr class="pricedata">
+                <td class="col1"><strong>Price Range :<strong></td>
+                <td class="col2">
+                    <input type="text" id="amount" readonly class="goldSliderText">
+                    <div id="slider-range"></div>
+                </td>
+                <td class="col3">
+                    
+                </td>
+            </tr>
+            <tr class="typeData">
+                <td class="col1"><strong>Type :<strong></td>
+                <td class="col2">
+                    <select>
+                        <option>Casual</option>
+                        <option>Offecial</option>
+                        <option>Leather</option>
+                    </select>
+                </td>
+
+            </tr>
+            <tr class="colorData">
+                <td class="col1"><strong>Color :</strong></td>
+                <td class="col2">
+                    <select>
+                        <option>Black</option>
+                        <option>Green</option>
+                        <option>Brown</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        
+        
+ 
+    </form>
+    <button id="submitbtn">Filter products</button>
+    <div class="container">
+    <div id="placeholder"></div>
+    </div>
+    
+</body>
+</html>

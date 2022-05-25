@@ -1,0 +1,100 @@
+{
+	"shoes": [
+        {   
+            "id":"shoe1",
+            "name":"Boots (Brown) men",
+            "gender":"men",
+            "style":"Flat",
+            "sizes":[4, 4.5, 5, 5.5, 6, 6.5, 7],
+            "price":75,
+            "color":"Brown",
+            "description":"These chic snake print shoes are crafted from a combination of soft leather and nubuck. For ultimate versatility, they feature a heel piece that folds down - allowing them to be worn as slip-ons or mules. The simple yet sophisticated upper is teamed with a low 2cm heel and rubber outsole to help with grip, while a leather lining and sock work together with our dual density Cushion Plus™ technology to provide comfort in every step.",
+            "picture":"mensShoesImages/boot26161353_W_3.webp",
+            "url":"shoe1.html"
+        },
+        {   
+            "id":"shoe2",
+            "name":"Shoes (green) men",
+            "gender":"men",
+            "style":"Hike shoes",
+            "sizes":[4, 4.5, 5, 5.5, 6, 6.5, 7],
+            "price":85,
+            "color":"Green",
+            "description":"These chic snake print shoes are crafted from a combination of soft leather and nubuck. For ultimate versatility, they feature a heel piece that folds down - allowing them to be worn as slip-ons or mules. The simple yet sophisticated upper is teamed with a low 2cm heel and rubber outsole to help with grip, while a leather lining and sock work together with our dual density Cushion Plus™ technology to provide comfort in every step.",
+            "picture":"mensShoesImages/casual26161479_W_1.webp",
+            "url":"shoe2.html"
+        },
+        {   
+            "id":"shoe3",
+            "name":"Harverd cut (Black) men",
+            "gender":"men",
+            "style":"Office wear",
+            "sizes":[4, 4.5, 5, 5.5, 6, 6.5, 7],
+            "price":90,
+            "color":"Black",
+            "description":"These chic snake print shoes are crafted from a combination of soft leather and nubuck. For ultimate versatility, they feature a heel piece that folds down - allowing them to be worn as slip-ons or mules. The simple yet sophisticated upper is teamed with a low 2cm heel and rubber outsole to help with grip, while a leather lining and sock work together with our dual density Cushion Plus™ technology to provide comfort in every step.",
+            "picture":"mensShoesImages/office26162012_W_1.webp",
+            "url":"shoe2.html"
+        },
+        {
+            "id":"shoe4",
+            "name":"Flats (pink)",
+            "gender":"Women",
+            "picture":"womensShoesImages/flats26161614_W_1.webp",
+            "url":"shoe4.html",
+            "price":89.00,
+            "style":"Flats",
+            "sizes":[5, 6, 7],
+			
+            "color":"pink",
+			"description":"Refreshing our bestselling Orinoco profile, a lace-up ankle boot that stays all day wearable. The premium dark olive leather upper stays classic and crafted while the cleated sole with 3cm heel feels durable and adds grip. Perfect to step into the season with casual style."
+			
+			
+        },
+		{
+            "id":"shoe5",
+            "name":"Court shoes (Black)",
+            "gender":"Women",
+            "picture":"womensShoesImages/heels26161568_W_1.webp",
+            "url":"shoe5.html",
+            "price":102.00,
+            "style":"Flats",
+            "sizes":[5, 6, 7],
+			
+            "color":"Black",
+			"description":"Refreshing our bestselling Orinoco profile, a lace-up ankle boot that stays all day wearable. The premium dark olive leather upper stays classic and crafted while the cleated sole with 3cm heel feels durable and adds grip. Perfect to step into the season with casual style."
+			
+			
+        },
+        {
+            "id":"shoe6",
+            "name":"Sneekers (Silver)",
+            "gender":"Women",
+            "picture":"womensShoesImages/sneakers26162143_W_1.webp",
+            "url":"shoe6.html",
+            "price":92.00,
+            "style":"shoes",
+            "sizes":[5, 6, 7],
+			
+            "color":"Silver",
+			"description":"Refreshing our bestselling Orinoco profile, a lace-up ankle boot that stays all day wearable. The premium dark olive leather upper stays classic and crafted while the cleated sole with 3cm heel feels durable and adds grip. Perfect to step into the season with casual style."
+			
+			
+        },
+        {
+            "id":"shoe7",
+            "name":"Shoes (brown) kids",
+            "gender":"Kids",
+            "picture":"womensShoesImages/flats26161614_W_1.webp",
+            "url":"shoe7.html",
+            "price":92.00,
+            "style":"shoes",
+            "sizes":[5, 6, 7],
+			
+            "color":"Brown",
+			"description":"Refreshing our bestselling Orinoco profile, a lace-up ankle boot that stays all day wearable. The premium dark olive leather upper stays classic and crafted while the cleated sole with 3cm heel feels durable and adds grip. Perfect to step into the season with casual style."
+			
+			
+        }
+        
+]}
